@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.view.WindowManager
 import android.widget.LinearLayout
 import android.widget.TextView
+import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -24,6 +25,8 @@ class ItemsAdapter(private val context: Context) : RecyclerView.Adapter<ItemsAda
     class ItemViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val textView: TextView =
             view.findViewById(R.id.tvTitle1) // assuming you're using the same ID
+        val parent: ConstraintLayout =
+            view.findViewById(R.id.parent) // assuming you're using the same ID
         // Add other view bindings if necessary
     }
 

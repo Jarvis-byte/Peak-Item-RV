@@ -5,6 +5,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.PagerSnapHelper
 import androidx.recyclerview.widget.RecyclerView
+import kotlin.math.roundToInt
+
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -17,6 +19,15 @@ class MainActivity : AppCompatActivity() {
         recyclerView.adapter = adapter
         recyclerView.layoutManager =
             LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false)
+
+        val widthDp = resources.displayMetrics.widthPixels
+
+        recyclerView.setPaddingRelative(
+            /* start = */ resources.getDimensionPixelSize(R.dimen._20dp),
+            /* top = */ resources.getDimensionPixelSize(R.dimen._10sdp),
+            /* end = */ (widthDp * 0.2).roundToInt(),
+            /* bottom = */ 0
+        )
 
         val snapHelper = PagerSnapHelper()
         snapHelper.attachToRecyclerView(recyclerView)
