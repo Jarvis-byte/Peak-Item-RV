@@ -4,20 +4,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_marginTop="20dp"
+    tools:context=".FirstPage.MainActivity">
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/genreTags"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="@dimen/_14sdp"
+
         android:layout_marginVertical="@dimen/_10sdp"
-        android:drawableRight="@drawable/ic_arrow"
+        android:drawableEnd="@drawable/ic_see_all_new"
         android:ellipsize="none"
+        android:fadingEdgeLength="20dp"
         android:requiresFadingEdge="horizontal"
         android:singleLine="true"
+        android:textSize="18sp"
+        android:gravity="center_vertical"
         android:text="@string/top_series"
-        android:textColor="@color/black"
+
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:paddingVertical="8dp">
+
+    <TextView
+        android:id="@+id/tvNumber1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="1"
+
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:paddingVertical="7dp">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/ivContentImage"
+            android:layout_width="84dp"
+            android:layout_height="84dp"
+            android:layout_marginTop="3dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerSize5dp" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvContentTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_14sdp"
+            android:ellipsize="none"
+            android:fadingEdgeLength="54dp"
+            android:includeFontPadding="false"
+            android:requiresFadingEdge="horizontal"
+            android:singleLine="true"
+            android:text="Kuroko's Basketball"
+
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivContentImage"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivRating"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:background="@drawable/circle_dark_green"
+            android:padding="4dp"
+            app:layout_constraintBottom_toBottomOf="@id/tvSubtitle"
+            app:layout_constraintStart_toStartOf="@id/tvContentTitle"
+            app:layout_constraintTop_toTopOf="@id/tvSubtitle"
+            app:srcCompat="@drawable/ic_rating_star" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSubtitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:ellipsize="none"
+
+            android:fadingEdgeLength="40dp"
+            android:includeFontPadding="false"
+            android:requiresFadingEdge="horizontal"
+            android:singleLine="true"
+
+            android:text=" 4.2 (4M+ listens) • 240 mins"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/ivRating"
+            app:layout_constraintTop_toBottomOf="@id/tvContentTitle" />
+
+        <com.example.peekrv.FadingTextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:maxLength="150"
+            android:maxLines="3"
+
+            android:text="Chanakya niti wo kitaab hai, jise sun kar kar aap paisa, power aur respect pa sakte hain. Chanakya ne apni niti se sab krlia, lets"
+            android:textSize="13sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@id/tvContentTitle"
+            app:layout_constraintTop_toBottomOf="@id/tvSubtitle"
+            app:lineHeight="15dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

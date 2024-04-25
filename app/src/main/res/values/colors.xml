@@ -2,4 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="primary400">@color/brand_orange</color>
+    <color name="brand_orange">#EF4130</color>
+    <color name="neutral400">#9DA3AF</color>
 </resources>
