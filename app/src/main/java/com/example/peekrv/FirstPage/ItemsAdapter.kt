@@ -21,9 +21,7 @@ class ItemsAdapter() : RecyclerView.Adapter<ItemsAdapter.ItemViewHolder>() {
     class ItemViewHolder(view: View) : RecyclerView.ViewHolder(view) {
         val textView: TextView =
             view.findViewById(R.id.tvTitle1) // assuming you're using the same ID
-        val parent: ConstraintLayout =
-            view.findViewById(R.id.parent) // assuming you're using the same ID
-        // Add other view bindings if necessary
+
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
@@ -33,6 +31,7 @@ class ItemsAdapter() : RecyclerView.Adapter<ItemsAdapter.ItemViewHolder>() {
     }
 
     override fun onBindViewHolder(holder: ItemViewHolder, position: Int) {
+
 
     }
 
