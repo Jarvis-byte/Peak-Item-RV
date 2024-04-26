@@ -5,4 +5,5 @@
     <color name="primary400">@color/brand_orange</color>
     <color name="brand_orange">#EF4130</color>
     <color name="neutral400">#9DA3AF</color>
+    <color name="light_grey">#32D3D3D3</color>
 </resources>
