@@ -26,8 +26,5 @@ To integrate this custom RecyclerView setup into your project:
 
 Contributions to improve this implementation or extend its functionality are welcome. Please feel free to fork the repository, make your changes, and submit a pull request.
 
-## License
-
-This project is released under the MIT License. See the [LICENSE](LICENSE.md) file for more details.
 
 Enjoy a more intuitive horizontal scrolling experience with RecyclerView Peek Cards!
