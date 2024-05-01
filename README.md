@@ -6,7 +6,7 @@ This repository contains a solution to enhance the horizontal scrolling experien
 
 The RecyclerView in this repository is designed to display, 5-item in a vertical layout, in a horizontal Recycler View while allowing a small peek of the edges of adjacent cards. This peek effect helps users understand that they can swipe horizontally to view other cards, improving user interaction and engagement.
 
-<img src="https://github.com/Jarvis-byte/Peek-RecyclerView-with-PagerSnapHelper/blob/main/WhatsApp%20Image%202024-04-30%20at%2012.01.00%20PM%20(1).jpeg" alt="Preview Image" title="Peek Effect Preview" style="width: 400px;">
+<img src="https://github.com/Jarvis-byte/Peek-RecyclerView-with-PagerSnapHelper/blob/main/WhatsApp%20Video%202024-04-30%20at%2011.59.47%20AM%20(1).gif" alt="Peek RecyclerView Demo" style="width: 400px; height: auto;">
 
 
 ## Features
